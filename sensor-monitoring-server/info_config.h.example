@@ -1,0 +1,22 @@
+#pragma once
+
+/*
+ * Modèle à copier vers info_config.h et renseigner les valeurs réelles :
+ *
+ *     cp info_config.h.example info_config.h
+ *
+ * Attention : changer une valeur impose de recompiler le projet.
+ */
+
+/* --- Broker MQTT --- */
+#define MQTT_BROKER  "127.0.0.1:1883"
+#define MQTT_USERNAME  "mqtt_username"
+#define MQTT_PASS  "mqtt_password"
+#define MQTT_TOPIC_MEASUREMENTS  "esp32/bme280/measurements"
+#define MQTT_CLIENT_ID  "sensor-monitoring-server"
+
+/* --- Base de données --- */
+#define DB_PATH  "../sensor-monitoring-database/db_esp32.db"
+
+/* --- Logger --- */
+#define LEVEL_LOG  1

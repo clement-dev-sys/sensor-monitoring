@@ -1,0 +1,20 @@
+# --- Informations config ---
+info_config.h
+**/info_config.h
+
+# --- ESP-IDF ---
+sensor-monitoring-system/build/
+sensor-monitoring-system/managed_components/
+sensor-monitoring-system/sdkconfig
+sensor-monitoring-system/sdkconfig.old
+sensor-monitoring-system/dependencies.lock
+
+# --- Serveur ---
+sensor-monitoring-server/sensor-monitoring-server
+sensor-monitoring-server/*.o
+
+# --- Base de données & logs ---
+sensor-monitoring-database/*.db
+sensor-monitoring-database/*.db-wal
+sensor-monitoring-database/*.db-shm
+sensor-monitoring-database/*.log

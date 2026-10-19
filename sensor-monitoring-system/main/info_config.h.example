@@ -1,0 +1,27 @@
+#pragma once
+
+/*
+ * Modèle à copier vers info_config.h et renseigner les valeurs réelles :
+ *
+ *     cp main/info_config.h.example main/info_config.h
+ *
+ * Attention : changer une valeur impose de recompiler le projet.
+ */
+
+/* --- Réseau Wi-Fi --- */
+#define ESP_WIFI_SSID  "wifi_ssid"
+#define ESP_WIFI_PASS  "wifi_password"
+
+/* --- Adressage IP --- */
+#define ESP_STATIC_IP  "192.168.1.50"
+#define ESP_STATIC_GW  "192.168.1.1"
+#define ESP_STATIC_NETMASK  "255.255.255.0"
+
+/* --- Broker MQTT --- */
+#define MQTT_BROKER  "mqtt://192.168.1.50:1883"
+#define MQTT_USERNAME  "mqtt_username"
+#define MQTT_PASS  "mqtt_password"
+#define MQTT_TOPIC_MEASUREMENTS  "esp32/bme280/measurements"
+
+/* --- SNTP --- */
+#define ESP_SNTP_SERVER  "pool.ntp.org"
